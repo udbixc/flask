@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>table</title>
+    <link rel="stylesheet" href="../static/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <table class="table table-striped table-bordered table-hover">
+            <thead>
+            <tr>
+                <th>姓名</th>
+                <th>年龄</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for man in mans %}
+            <tr>
+                <td>{{man.name}}</td>
+                <td>{{man.age}}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
